@@ -1,3 +1,4 @@
+import { jsdom } from 'jsdom';
 import Cookies from './../lib/cookie';
 
 test('测试添加Cookies', () => {

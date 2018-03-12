@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1520841198091" clover="3.2.0">
-  <project timestamp="1520841198091" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="22" coveredconditionals="18" methods="0" coveredmethods="0" elements="40" coveredelements="36" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1">
+<coverage generated="1520854473369" clover="3.2.0">
+  <project timestamp="1520854473369" name="All files">
+    <metrics statements="31" coveredstatements="31" conditionals="28" coveredconditionals="24" methods="12" coveredmethods="12" elements="71" coveredelements="67" complexity="0" loc="31" ncloc="31" packages="1" files="2" classes="2">
       <file name="cookie.js" path="/Users/reking/Documents/Working/other/e-utils/lib/cookie.js">
         <metrics statements="18" coveredstatements="18" conditionals="22" coveredconditionals="18" methods="0" coveredmethods="0"/>
         <line num="5" count="1" type="stmt"/>
@@ -22,6 +22,22 @@
         <line num="59" count="7" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
         <line num="76" count="1" type="stmt"/>
+      </file>
+      <file name="type.js" path="/Users/reking/Documents/Working/other/e-utils/lib/type.js">
+        <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="33" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="53" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="83" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="93" count="2" type="stmt"/>
+        <line num="103" count="2" type="stmt"/>
+        <line num="113" count="2" type="stmt"/>
+        <line num="123" count="4" type="stmt"/>
       </file>
     </metrics>
   </project>
