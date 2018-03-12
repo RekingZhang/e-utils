@@ -1,0 +1,36 @@
+{
+  "name": "e-utils",
+  "version": "0.0.1",
+  "description": "A simple JavaScript utility library",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "cover": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RekingZhang/e-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "util",
+    "tool"
+  ],
+  "author": "RekingZhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RekingZhang/e-utils/issues"
+  },
+  "homepage": "https://github.com/RekingZhang/e-utils#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "jest": "^22.4.2",
+    "regenerator-runtime": "^0.11.1",
+    "webpack": "^3.8.1"
+  }
+}
