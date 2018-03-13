@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1520854473369" clover="3.2.0">
-  <project timestamp="1520854473369" name="All files">
-    <metrics statements="31" coveredstatements="31" conditionals="28" coveredconditionals="24" methods="12" coveredmethods="12" elements="71" coveredelements="67" complexity="0" loc="31" ncloc="31" packages="1" files="2" classes="2">
+<coverage generated="1520939824271" clover="3.2.0">
+  <project timestamp="1520939824271" name="All files">
+    <metrics statements="66" coveredstatements="66" conditionals="34" coveredconditionals="30" methods="24" coveredmethods="24" elements="124" coveredelements="120" complexity="0" loc="66" ncloc="66" packages="1" files="3" classes="3">
       <file name="cookie.js" path="/Users/reking/Documents/Working/other/e-utils/lib/cookie.js">
         <metrics statements="18" coveredstatements="18" conditionals="22" coveredconditionals="18" methods="0" coveredmethods="0"/>
         <line num="5" count="1" type="stmt"/>
@@ -22,6 +22,44 @@
         <line num="59" count="7" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
         <line num="76" count="1" type="stmt"/>
+      </file>
+      <file name="math.js" path="/Users/reking/Documents/Working/other/e-utils/lib/math.js">
+        <metrics statements="35" coveredstatements="35" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="17" count="34" type="stmt"/>
+        <line num="19" count="34" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="23" count="22" type="stmt"/>
+        <line num="31" count="13" type="stmt"/>
+        <line num="32" count="17" type="stmt"/>
+        <line num="33" count="17" type="stmt"/>
+        <line num="34" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="42" count="14" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="52" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="56" count="5" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="34" type="stmt"/>
+        <line num="64" count="34" type="stmt"/>
+        <line num="65" count="34" type="stmt"/>
+        <line num="66" count="34" type="stmt"/>
+        <line num="68" count="70" type="stmt"/>
+        <line num="69" count="70" type="stmt"/>
+        <line num="70" count="70" type="stmt"/>
+        <line num="74" count="34" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
+        <line num="80" count="4" type="stmt"/>
+        <line num="85" count="3" type="stmt"/>
       </file>
       <file name="type.js" path="/Users/reking/Documents/Working/other/e-utils/lib/type.js">
         <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
