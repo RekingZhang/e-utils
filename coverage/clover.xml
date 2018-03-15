@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1521019197771" clover="3.2.0">
-  <project timestamp="1521019197771" name="All files">
-    <metrics statements="87" coveredstatements="87" conditionals="46" coveredconditionals="42" methods="31" coveredmethods="31" elements="164" coveredelements="160" complexity="0" loc="87" ncloc="87" packages="1" files="6" classes="6">
+<coverage generated="1521029789214" clover="3.2.0">
+  <project timestamp="1521029789215" name="All files">
+    <metrics statements="99" coveredstatements="99" conditionals="58" coveredconditionals="54" methods="34" coveredmethods="34" elements="191" coveredelements="187" complexity="0" loc="99" ncloc="99" packages="1" files="8" classes="8">
       <file name="cookie.js" path="/Users/reking/Documents/Working/other/e-utils/lib/cookie.js">
         <metrics statements="18" coveredstatements="18" conditionals="22" coveredconditionals="18" methods="0" coveredmethods="0"/>
         <line num="5" count="1" type="stmt"/>
@@ -25,10 +25,10 @@
       </file>
       <file name="currying.js" path="/Users/reking/Documents/Working/other/e-utils/lib/currying.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
       </file>
       <file name="debounce.js" path="/Users/reking/Documents/Working/other/e-utils/lib/debounce.js">
         <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
@@ -41,6 +41,17 @@
         <line num="19" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="21" count="7" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
+      </file>
+      <file name="getter.js" path="/Users/reking/Documents/Working/other/e-utils/lib/getter.js">
+        <metrics statements="8" coveredstatements="8" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="26" count="21" type="cond" truecount="4" falsecount="0"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="30" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="33" count="15" type="stmt"/>
+        <line num="35" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="38" count="9" type="stmt"/>
       </file>
       <file name="math.js" path="/Users/reking/Documents/Working/other/e-utils/lib/math.js">
         <metrics statements="35" coveredstatements="35" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
@@ -80,6 +91,13 @@
         <line num="79" count="4" type="stmt"/>
         <line num="84" count="3" type="stmt"/>
       </file>
+      <file name="singleton.js" path="/Users/reking/Documents/Working/other/e-utils/lib/singleton.js">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
+      </file>
       <file name="throttle.js" path="/Users/reking/Documents/Working/other/e-utils/lib/throttle.js">
         <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
         <line num="9" count="2" type="stmt"/>
@@ -93,19 +111,19 @@
       </file>
       <file name="type.js" path="/Users/reking/Documents/Working/other/e-utils/lib/type.js">
         <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="13" count="18" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
         <line num="33" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="43" count="2" type="stmt"/>
         <line num="53" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="63" count="2" type="stmt"/>
         <line num="73" count="2" type="stmt"/>
-        <line num="83" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="83" count="21" type="cond" truecount="2" falsecount="0"/>
         <line num="93" count="2" type="stmt"/>
         <line num="103" count="2" type="stmt"/>
         <line num="113" count="2" type="stmt"/>
-        <line num="123" count="4" type="stmt"/>
+        <line num="123" count="6" type="stmt"/>
       </file>
     </metrics>
   </project>
