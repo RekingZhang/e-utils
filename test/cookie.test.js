@@ -37,7 +37,7 @@ test('测试自定义过期时间', () => {
 	const name = 'k';
 	const value = '1';
 	Cookies.set(name, value, {
-		expires: new Date('2018-03-15')
+		expires: new Date('2018-09-15')
 	});
 	expect(Cookies.get(name)).toEqual(value);
 });

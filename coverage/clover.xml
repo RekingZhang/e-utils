@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1521029789214" clover="3.2.0">
-  <project timestamp="1521029789215" name="All files">
-    <metrics statements="99" coveredstatements="99" conditionals="58" coveredconditionals="54" methods="34" coveredmethods="34" elements="191" coveredelements="187" complexity="0" loc="99" ncloc="99" packages="1" files="8" classes="8">
+<coverage generated="1521427852085" clover="3.2.0">
+  <project timestamp="1521427852085" name="All files">
+    <metrics statements="126" coveredstatements="126" conditionals="75" coveredconditionals="71" methods="37" coveredmethods="37" elements="238" coveredelements="234" complexity="0" loc="126" ncloc="126" packages="1" files="9" classes="9">
       <file name="cookie.js" path="/Users/reking/Documents/Working/other/e-utils/lib/cookie.js">
         <metrics statements="18" coveredstatements="18" conditionals="22" coveredconditionals="18" methods="0" coveredmethods="0"/>
         <line num="5" count="1" type="stmt"/>
@@ -124,6 +124,36 @@
         <line num="103" count="2" type="stmt"/>
         <line num="113" count="2" type="stmt"/>
         <line num="123" count="6" type="stmt"/>
+      </file>
+      <file name="validator.js" path="/Users/reking/Documents/Working/other/e-utils/lib/validator.js">
+        <metrics statements="27" coveredstatements="27" conditionals="17" coveredconditionals="17" methods="3" coveredmethods="3"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="58" count="7" type="stmt"/>
+        <line num="59" count="7" type="stmt"/>
+        <line num="61" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="65" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="70" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="5" type="stmt"/>
+        <line num="72" count="5" type="stmt"/>
+        <line num="73" count="5" type="stmt"/>
+        <line num="74" count="5" type="stmt"/>
+        <line num="75" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="83" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="84" count="2" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+        <line num="88" count="2" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="90" count="34" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
+        <line num="93" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
