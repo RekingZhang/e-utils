@@ -1,6 +1,6 @@
 {
 	"name": "e-utils",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "A simple JavaScript utility library",
 	"main": "index.js",
 	"scripts": {
@@ -12,7 +12,7 @@
 		"type": "git",
 		"url": "git+https://github.com/RekingZhang/e-utils.git"
 	},
-	"keywords": ["javascript", "util", "tool"],
+	"keywords": ["javascript", "util", "tool", "cookie"],
 	"author": "RekingZhang",
 	"license": "MIT",
 	"bugs": {
@@ -23,10 +23,12 @@
 		"babel-core": "^6.26.0",
 		"babel-jest": "^22.4.1",
 		"babel-loader": "^7.1.4",
+		"babel-plugin-add-module-exports": "^0.2.1",
 		"babel-preset-env": "^1.6.1",
 		"clean-webpack-plugin": "^0.1.19",
 		"jest": "^22.4.2",
 		"regenerator-runtime": "^0.11.1",
+		"uglifyjs-webpack-plugin": "^1.2.4",
 		"webpack": "^3.8.1"
 	},
 	"config": {
