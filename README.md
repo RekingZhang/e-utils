@@ -4,8 +4,18 @@
 
 ## 安装
 
+### NPM
+
 ```sh
 npm install e-utils  --save
+```
+
+或
+
+### CDN
+
+```javascript
+<script src="https://unpkg.com/e-utils/dist/e-utils.min.js" />
 ```
 
 ## 使用
@@ -14,6 +24,12 @@ npm install e-utils  --save
 
 ```javascript
 import { Cookie } from 'e-utils';
+```
+
+如果使用的是 CDN 引入，所有的工具方法挂载在全局变量 `eutils` 下面
+
+```javascript
+eutils.Cookie.set('k', 'v');
 ```
 
 ## 按需加载
