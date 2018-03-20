@@ -58,7 +58,7 @@ npm install babel-plugin-import --save-dev
 
 ```javascript
 {
-	test: /eutils.lib.*?js$/,
+	test: /e-utils.lib.*?js$/,
 	loader: "babel-loader"
 }
 ```
