@@ -8,6 +8,5 @@
 				}
 			}
 		]
-	],
-	"plugins": ["add-module-exports"]
+	]
 }

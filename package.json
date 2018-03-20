@@ -1,6 +1,6 @@
 {
 	"name": "e-utils",
-	"version": "0.1.0",
+	"version": "0.3.1",
 	"description": "A simple JavaScript utility library",
 	"main": "index.js",
 	"scripts": {
@@ -23,7 +23,6 @@
 		"babel-core": "^6.26.0",
 		"babel-jest": "^22.4.1",
 		"babel-loader": "^7.1.4",
-		"babel-plugin-add-module-exports": "^0.2.1",
 		"babel-preset-env": "^1.6.1",
 		"clean-webpack-plugin": "^0.1.19",
 		"jest": "^22.4.2",

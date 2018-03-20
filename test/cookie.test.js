@@ -1,52 +1,52 @@
 import { jsdom } from 'jsdom';
-import Cookies from './../lib/cookie';
+import Cookie from './../lib/cookie';
 
-test('测试添加Cookies', () => {
+test('测试添加Cookie', () => {
 	const name = 'k';
 	const value = 'xxx';
-	Cookies.set(name, value);
-	expect(Cookies.get(name)).toEqual(value);
+	Cookie.set(name, value);
+	expect(Cookie.get(name)).toEqual(value);
 });
 
 test('测试配置参数', () => {
 	const name = 'k';
 	const value = 'xxx';
-	Cookies.set(name, value, {
+	Cookie.set(name, value, {
 		expires: 1,
 		path: '/test',
 		domain: 'github.com'
 	});
-	expect(Cookies.get(name)).toEqual(value);
+	expect(Cookie.get(name)).toEqual(value);
 });
 
-test('测试添加value为Object类型Cookies', () => {
+test('测试添加value为Object类型Cookie', () => {
 	const name = 'k';
 	const value = { a: 1 };
-	Cookies.set(name, value);
-	expect(JSON.parse(Cookies.get(name))).toEqual(value);
+	Cookie.set(name, value);
+	expect(JSON.parse(Cookie.get(name))).toEqual(value);
 });
 
 test('测试编码、解码', () => {
 	const name = 'k';
 	const value = 'a=1';
-	Cookies.set(name, value);
-	expect(Cookies.get(name)).toEqual(value);
+	Cookie.set(name, value);
+	expect(Cookie.get(name)).toEqual(value);
 });
 
 test('测试自定义过期时间', () => {
 	const name = 'k';
 	const value = '1';
-	Cookies.set(name, value, {
-		expires: new Date('2018-09-15')
+	Cookie.set(name, value, {
+		expires: new Date('2020-09-15')
 	});
-	expect(Cookies.get(name)).toEqual(value);
+	expect(Cookie.get(name)).toEqual(value);
 });
 
-test('测试删除Cookies', () => {
+test('测试删除Cookie', () => {
 	const name = 'k';
 	const value = 'xxx';
 	let un;
-	Cookies.set(name, value);
-	Cookies.remove(name);
-	expect(Cookies.get(name)).toEqual(un);
+	Cookie.set(name, value);
+	Cookie.remove(name);
+	expect(Cookie.get(name)).toEqual(un);
 });

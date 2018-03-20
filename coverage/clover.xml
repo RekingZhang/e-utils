@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1521427852085" clover="3.2.0">
-  <project timestamp="1521427852085" name="All files">
+<coverage generated="1521515063502" clover="3.2.0">
+  <project timestamp="1521515063503" name="All files">
     <metrics statements="126" coveredstatements="126" conditionals="75" coveredconditionals="71" methods="37" coveredmethods="37" elements="238" coveredelements="234" complexity="0" loc="126" ncloc="126" packages="1" files="9" classes="9">
       <file name="cookie.js" path="/Users/reking/Documents/Working/other/e-utils/lib/cookie.js">
         <metrics statements="18" coveredstatements="18" conditionals="22" coveredconditionals="18" methods="0" coveredmethods="0"/>
