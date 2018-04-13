@@ -1,5 +1,9 @@
 # e-utils
 
+[![npm version](https://img.shields.io/npm/v/e-utils.svg?style=flat-square)](https://www.npmjs.org/package/e-utils)
+[![Build Status](https://travis-ci.org/RekingZhang/e-utils.svg?branch=master)](https://travis-ci.org/RekingZhang/e-utils)
+[![Coverage Status](https://coveralls.io/repos/github/RekingZhang/e-utils/badge.svg?branch=master)](https://coveralls.io/github/RekingZhang/e-utils?branch=master)
+
 > 前端常用函数工具库
 
 ## 安装
