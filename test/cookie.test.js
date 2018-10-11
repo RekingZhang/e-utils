@@ -1,4 +1,3 @@
-import { jsdom } from 'jsdom';
 import Cookie from './../lib/cookie';
 
 test('测试添加Cookie', () => {
@@ -21,7 +20,9 @@ test('测试配置参数', () => {
 
 test('测试添加value为Object类型Cookie', () => {
 	const name = 'k';
-	const value = { a: 1 };
+	const value = {
+		a: 1
+	};
 	Cookie.set(name, value);
 	expect(JSON.parse(Cookie.get(name))).toEqual(value);
 });
