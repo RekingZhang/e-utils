@@ -4,7 +4,8 @@ describe('rule', () => {
 	test('测试校验邮箱', () => {
 		expect(rule.isEmail('121212@')).not.toBeTruthy();
 		expect(rule.isEmail('121212@58')).not.toBeTruthy();
-		expect(rule.isEmail('121212@5.com')).not.toBeTruthy();
+		expect(rule.isEmail('12@123456')).not.toBeTruthy();
+		expect(rule.isEmail('121212.com')).not.toBeTruthy();
 		expect(rule.isEmail('121212@gamil.com')).toBeTruthy();
 	});
 	test('测试校验手机号', () => {
