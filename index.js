@@ -7,6 +7,7 @@ import throttle from './lib/throttle';
 import type from './lib/type';
 import rule from './lib/rule';
 import validator from './lib/validator';
+import proxy from './lib/proxy';
 
 export {
 	Cookie,
@@ -17,5 +18,6 @@ export {
 	throttle,
 	type,
 	rule,
-	validator
+	validator,
+	proxy
 };
