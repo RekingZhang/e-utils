@@ -8,9 +8,11 @@ import type from './lib/type';
 import rule from './lib/rule';
 import validator from './lib/validator';
 import proxy from './lib/proxy';
+import currying from './lib/currying';
 
 export {
 	Cookie,
+	currying,
 	debounce,
 	getter,
 	math,
