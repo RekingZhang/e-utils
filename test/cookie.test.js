@@ -5,14 +5,21 @@ test('测试添加Cookie', () => {
 	const value = 'xxx';
 	Cookie.set(name, value);
 	expect(Cookie.get(name)).toEqual(value);
+	expect(Cookie.get()).toBeUndefined();
 });
 
-test('测试配置参数', () => {
+test('测试值为引用Cookie', () => {
+	document.cookie = 'a="xs"'
+	expect(Cookie.get('a')).toEqual('xs');
+});
+
+test('测试边界参数', () => {
 	const name = 'k';
 	const value = 'xxx';
 	Cookie.set(name, value, {
-		expires: 1,
-		path: '/test',
+		expires: 0,
+		path: null,
+		secure: true,
 		domain: 'github.com'
 	});
 	expect(Cookie.get(name)).toEqual(value);
