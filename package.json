@@ -1,6 +1,6 @@
 {
 	"name": "e-utils",
-	"version": "0.4.5",
+	"version": "0.4.6",
 	"description": "A simple JavaScript utility library",
 	"main": "index.js",
 	"scripts": {
