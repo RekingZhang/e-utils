@@ -9,9 +9,14 @@ import rule from './lib/rule';
 import validator from './lib/validator';
 import proxy from './lib/proxy';
 import currying from './lib/currying';
+import {
+	compose,
+	pipe
+} from './lib/compose';
 
 export {
 	Cookie,
+	compose,
 	currying,
 	debounce,
 	getter,
@@ -21,5 +26,6 @@ export {
 	type,
 	rule,
 	validator,
-	proxy
+	proxy,
+	pipe
 };
