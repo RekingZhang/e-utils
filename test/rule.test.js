@@ -11,6 +11,8 @@ describe('rule', () => {
 	test('测试校验手机号', () => {
 		expect(rule.isMobilePhone('121212')).not.toBeTruthy();
 		expect(rule.isMobilePhone('18513833315')).toBeTruthy();
+		expect(rule.isMobilePhone('15413833315')).not.toBeTruthy();
+		expect(rule.isMobilePhone('17813833315')).toBeTruthy();
 	});
 	test('测试校验身份证', () => {
 		//长度校验
