@@ -3,6 +3,7 @@
 	"version": "0.5.2",
 	"description": "A simple JavaScript utility library",
 	"main": "index.js",
+	"types": "index.d.ts",
 	"scripts": {
 		"build": "webpack",
 		"test": "jest --coverage",
