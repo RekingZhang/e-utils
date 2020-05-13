@@ -5,9 +5,13 @@
  * @Last Modified time:  2018-03-15 16:54:43
  *
  */
+
 function isEmail(str) {
-  return /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(str);
+	return /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
+		str
+	);
 }
+
 /**
  * 2019年6月3日更新
  * 参考地址：https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%86%85%E5%9C%B0%E7%A7%BB%E5%8A%A8%E7%BB%88%E7%AB%AF%E9%80%9A%E8%AE%AF%E5%8F%B7%E6%AE%B5#%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8
@@ -26,10 +30,10 @@ function isEmail(str) {
  * 待分配号段：154、161、162、164、190、192、193、194、195、196、197
  *
  */
-
-
 function isMobilePhone(str) {
-  return /^(13[0-9]|14[579]|15[0-3,5-9]|16[567]|17[0135678]|18[0-9]|19[189])\d{8}$/.test(str);
+	return /^(13[0-9]|14[579]|15[0-3,5-9]|16[567]|17[0135678]|18[0-9]|19[189])\d{8}$/.test(
+		str
+	);
 }
 /**
  *
@@ -53,60 +57,53 @@ function isMobilePhone(str) {
  *
  *
  */
-
-
 function isCreditCard(str) {
-  var provinces = '11|12|13|14|15|21|22|23|31|32|33|34|35|36|37|41|42|43|44|45|46|50|51|52|53|54|61|62|63|64|65|71|81|82|91';
-  var codeLen = str.length; //长度校验
-
-  if (codeLen !== 18 && codeLen !== 15) {
-    return false;
-  } //地址码校验
-
-
-  if (provinces.indexOf(str.substring(0, 2)) === -1) {
-    return false;
-  } //出生日期码校验
-
-
-  var birthCode = codeLen === 18 ? str.substring(6, 14) : '19' + str.substring(6, 12);
-  var year = birthCode.substring(0, 4) - 0;
-  var month = birthCode.substring(4, 6) - 1; //因为js中的月份从0开始
-
-  var day = birthCode.substring(6, 8) - 0;
-  var brithday = new Date(year, month, day);
-
-  if (brithday.getFullYear() !== year || brithday.getMonth() !== month || brithday.getDate() !== day) {
-    return false;
-  } //校验码校验
-
-
-  if (codeLen === 18) {
-    var factor = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]; //加权因子
-
-    var parity = [1, 0, 'X', 9, 8, 7, 6, 5, 4, 3, 2]; //校验位
-
-    var code = str.substring(17); //∑(ai×Wi)(mod 11)
-
-    var sum = 0;
-
-    for (var i = 0; i < 17; i++) {
-      sum += str[i] * factor[i];
-    } // eslint-disable-next-line
-
-
-    if (parity[sum % 11] == code.toUpperCase()) {
-      return true;
-    }
-
-    return false;
-  }
-
-  return true;
+	const provinces =
+		'11|12|13|14|15|21|22|23|31|32|33|34|35|36|37|41|42|43|44|45|46|50|51|52|53|54|61|62|63|64|65|71|81|82|91';
+	let codeLen = str.length;
+	//长度校验
+	if (codeLen !== 18 && codeLen !== 15) {
+		return false;
+	}
+	//地址码校验
+	if (provinces.indexOf(str.substring(0, 2)) === -1) {
+		return false;
+	}
+	//出生日期码校验
+	let birthCode =
+		codeLen === 18 ? str.substring(6, 14) : '19' + str.substring(6, 12);
+	let year = birthCode.substring(0, 4) - 0;
+	let month = birthCode.substring(4, 6) - 1; //因为js中的月份从0开始
+	let day = birthCode.substring(6, 8) - 0;
+	let brithday = new Date(year, month, day);
+	if (
+		brithday.getFullYear() !== year ||
+		brithday.getMonth() !== month ||
+		brithday.getDate() !== day
+	) {
+		return false;
+	}
+	//校验码校验
+	if (codeLen === 18) {
+		const factor = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]; //加权因子
+		const parity = [1, 0, 'X', 9, 8, 7, 6, 5, 4, 3, 2]; //校验位
+		let code = str.substring(17);
+		//∑(ai×Wi)(mod 11)
+		let sum = 0;
+		for (let i = 0; i < 17; i++) {
+			sum += str[i] * factor[i];
+		}
+		// eslint-disable-next-line
+		if (parity[sum % 11] == code.toUpperCase()) {
+			return true;
+		}
+		return false;
+	}
+	return true;
 }
 
 export default {
-  isCreditCard: isCreditCard,
-  isEmail: isEmail,
-  isMobilePhone: isMobilePhone
+	isCreditCard,
+	isEmail,
+	isMobilePhone
 };

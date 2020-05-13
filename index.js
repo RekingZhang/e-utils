@@ -1,18 +1,15 @@
-import Cookie from './lib/cookie';
-import debounce from './lib/debounce';
-import getter from './lib/getter';
-import math from './lib/math';
-import singleton from './lib/singleton';
-import throttle from './lib/throttle';
-import type from './lib/type';
-import rule from './lib/rule';
-import validator from './lib/validator';
-import proxy from './lib/proxy';
-import currying from './lib/currying';
-import {
-	compose,
-	pipe
-} from './lib/compose';
+import Cookie from './src/cookie';
+import debounce from './src/debounce';
+import getter from './src/getter';
+import math from './src/math';
+import singleton from './src/singleton';
+import throttle from './src/throttle';
+import type from './src/type';
+import rule from './src/rule';
+import validator from './src/validator';
+import proxy from './src/proxy';
+import currying from './src/currying';
+import { compose, pipe } from './src/compose';
 
 export {
 	Cookie,

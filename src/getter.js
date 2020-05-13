@@ -22,23 +22,21 @@ import type from './type';
  */
 
 function getter(obj, keys) {
-  //调用的对象不能为空，并必须为Object数据类型
-  if (!obj || !type.isObject(obj)) {
-    return undefined;
-  } //兼容数组式和列表式两种调用方式
+	//调用的对象不能为空，并必须为Object数据类型
+	if (!obj || !type.isObject(obj)) {
+		return undefined;
+	}
+	//兼容数组式和列表式两种调用方式
+	if (!type.isArray(keys)) {
+		keys = Array.prototype.slice.call(arguments, 1);
+	}
+	let key = keys.shift();
 
-
-  if (!type.isArray(keys)) {
-    keys = Array.prototype.slice.call(arguments, 1);
-  }
-
-  var key = keys.shift();
-
-  if (keys.length === 0) {
-    return obj[key];
-  } else {
-    return getter.call(this, obj[key], keys);
-  }
+	if (keys.length === 0) {
+		return obj[key];
+	} else {
+		return getter.call(this, obj[key], keys);
+	}
 }
 
 export default getter;

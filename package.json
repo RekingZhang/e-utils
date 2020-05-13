@@ -6,6 +6,7 @@
 	"types": "index.d.ts",
 	"scripts": {
 		"build": "webpack",
+		"compile": "babel src --out-dir lib ",
 		"test": "jest --coverage",
 		"coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
 	},
@@ -26,11 +27,12 @@
 	},
 	"homepage": "https://github.com/RekingZhang/e-utils#readme",
 	"devDependencies": {
-		"babel-core": "^6.26.3",
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.9.6",
+		"@babel/preset-env": "^7.9.6",
 		"babel-eslint": "^8.2.2",
 		"babel-jest": "^22.4.4",
-		"babel-loader": "^7.1.4",
-		"babel-preset-env": "^1.6.1",
+		"babel-loader": "^8.1.0",
 		"clean-webpack-plugin": "^0.1.19",
 		"coveralls": "^3.1.0",
 		"eslint": "^4.19.1",
@@ -39,7 +41,7 @@
 		"jest": "^22.4.4",
 		"regenerator-runtime": "^0.11.1",
 		"uglifyjs-webpack-plugin": "^1.2.4",
-		"webpack": "^3.8.1"
+		"webpack": "^3.12.0"
 	},
 	"jest": {
 		"testURL": "http://localhost"
@@ -48,5 +50,15 @@
 		"commitizen": {
 			"path": "cz-conventional-changelog"
 		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"Android >= 4.0",
+		"iOS 7",
+		"not ie <= 9"
+	],
+	"dependencies": {
+		"core-js": "^2.6.11"
 	}
 }
