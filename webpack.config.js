@@ -2,7 +2,7 @@ const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //每次构建清理dist目录
 module.exports = {
-	entry: './index.js',
+	entry: './src/index.js',
 	output: {
 		filename: 'e-utils.min.js',
 		library: 'eutils',
