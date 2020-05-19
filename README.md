@@ -69,16 +69,3 @@ npm install babel-plugin-import --save-dev
 	]
 }
 ```
-
-## 其他
-
-### 1、打包时抛出 Unexpected token
-
-原因是 e-utils 的 js 源码为 ES2015 编写，没进行 babel 转译，可以在 webpack 配置中的增加以下 loaders：
-
-```javascript
-{
-	test: /e-utils.lib.*?js$/,
-	loader: "babel-loader"
-}
-```
