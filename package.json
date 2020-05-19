@@ -1,59 +1,59 @@
 {
-  "name": "e-utils",
-  "version": "0.5.3",
-  "description": "A simple JavaScript utility library",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "build": "webpack",
-    "compile": "babel src --out-dir lib ",
-    "test": "jest --coverage",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RekingZhang/e-utils.git"
-  },
-  "keywords": [
-    "javascript",
-    "util",
-    "tool",
-    "cookie"
-  ],
-  "author": "RekingZhang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/RekingZhang/e-utils/issues"
-  },
-  "homepage": "https://github.com/RekingZhang/e-utils#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-runtime": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "babel-eslint": "^8.2.2",
-    "babel-jest": "^22.4.4",
-    "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^0.1.19",
-    "coveralls": "^3.1.0",
-    "eslint": "^4.19.1",
-    "eslint-config-58fe": "^1.0.1",
-    "eslint-plugin-import": "^2.20.2",
-    "jest": "^22.4.4",
-    "regenerator-runtime": "^0.11.1",
-    "uglifyjs-webpack-plugin": "^1.2.4",
-    "webpack": "^3.12.0"
-  },
-  "jest": {
-    "testURL": "http://localhost"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.9.6",
-    "core-js": "^2.6.11"
-  }
+	"name": "e-utils",
+	"version": "0.5.3",
+	"description": "A simple JavaScript utility library",
+	"main": "./lib/index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"build": "webpack",
+		"compile": "babel src --out-dir lib ",
+		"test": "jest --coverage",
+		"coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RekingZhang/e-utils.git"
+	},
+	"keywords": [
+		"javascript",
+		"util",
+		"tool",
+		"cookie"
+	],
+	"author": "RekingZhang",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/RekingZhang/e-utils/issues"
+	},
+	"homepage": "https://github.com/RekingZhang/e-utils#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.9.6",
+		"@babel/plugin-transform-runtime": "^7.9.6",
+		"@babel/preset-env": "^7.9.6",
+		"babel-eslint": "^8.2.2",
+		"babel-jest": "^22.4.4",
+		"babel-loader": "^8.1.0",
+		"clean-webpack-plugin": "^0.1.19",
+		"coveralls": "^3.1.0",
+		"eslint": "^4.19.1",
+		"eslint-config-58fe": "^1.0.1",
+		"eslint-plugin-import": "^2.20.2",
+		"jest": "^22.4.4",
+		"regenerator-runtime": "^0.11.1",
+		"uglifyjs-webpack-plugin": "^1.2.4",
+		"webpack": "^3.12.0"
+	},
+	"jest": {
+		"testURL": "http://localhost"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.9.6",
+		"core-js": "^2.6.11"
+	}
 }
